@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ebsys.customerlistController">
+    <children>
+        <TableView fx:id="customertableview" layoutX="-3.0" layoutY="87.0" prefHeight="376.0" prefWidth="707.0">
+            <columns>
+                <TableColumn fx:id="cname" prefWidth="91.20001363754272" text="NAME" />
+                <TableColumn fx:id="meter_no" prefWidth="73.5999984741211" text="METER NO" />
+                <TableColumn fx:id="address" prefWidth="117.5999755859375" text="ADDRESS" />
+                <TableColumn fx:id="city" prefWidth="93.5999755859375" text="CITY" />
+                <TableColumn fx:id="email" prefWidth="156.80001831054688" text="EMAIL" />
+                <TableColumn fx:id="phno" prefWidth="172.0" text="PHONE NUMBER" />
+            </columns>
+        </TableView>
+        <Label layoutX="224.0" layoutY="25.0" prefHeight="19.0" prefWidth="253.0" text="CUSTOMER DETAILS">
+            <font>
+                <Font name="Georgia Bold Italic" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="23.0" layoutY="59.0" prefHeight="17.0" prefWidth="144.0" text="SEARCH CUSTOMER" />
+        <TextField fx:id="search" layoutX="167.0" layoutY="55.0" prefHeight="25.0" prefWidth="481.0" promptText="ENTER CUSTOMER NAME" />
+    </children>
+</Pane>

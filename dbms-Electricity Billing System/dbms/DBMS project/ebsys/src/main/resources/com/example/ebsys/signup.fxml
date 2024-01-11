@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ebsys.signupcontroller">
+   <top>
+      <AnchorPane prefHeight="75.0" prefWidth="600.0" style="-fx-background-color: skyblue;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="107.0" layoutY="21.0" text="CREATE NEW ACCOUNT" textFill="#121a84">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="341.0" prefWidth="600.0" style="-fx-background-color: SKYBLUE;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="user" layoutX="126.0" layoutY="63.0" text="CREATE USERNAME" textFill="#121a84">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="pass" layoutX="125.0" layoutY="98.0" text="CREATE PASSWORD" textFill="#121a84">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="270.0" layoutY="60.0" prefHeight="26.0" prefWidth="185.0" promptText="Create new username(meterno)" />
+            <TextField fx:id="password" layoutX="270.0" layoutY="95.0" prefHeight="26.0" prefWidth="187.0" promptText="crreate new password" />
+            <Button fx:id="create" layoutX="172.0" layoutY="183.0" mnemonicParsing="false" onAction="#createButtonOnAction" prefHeight="26.0" prefWidth="106.0" text="CREATE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="back" layoutX="321.0" layoutY="183.0" mnemonicParsing="false" onAction="#backToLogin" prefHeight="26.0" prefWidth="106.0" text="BACK">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="registrationMessageLabel" layoutX="168.0" layoutY="154.0" prefHeight="18.0" prefWidth="294.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
